@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:text="Scratch Tutorial"/>
+    <WebView
+        android:id="@+id/mWebView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round_edit"
+        android:layout_marginStart="15dp"
+        android:layout_above="@id/next"
+        android:layout_height="match_parent">
+
+    </WebView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_width="120dp"
+        android:id="@+id/next"
+        android:onClick="skip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="skip"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
